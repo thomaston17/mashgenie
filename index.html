@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=0.5, maximum-scale=0.5, minimal-ui">
+
+  <title>MASH GENIE</title>
+  <link href="normalize.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+  <h1 class="logo"><img src="img/mash-logo.svg" alt="Mash Genie"/></h1>
+  <p class="description">Fill in the blanks and your wish shall be granted.</p>
+
+<form action="" method="post" id="mash">
+
+  <div id="answers" class="hide">
+      <p>You live in <span id="location"></span> and drive a <span id="car"></span>. Your spouse <span id="spouse"></span> lives with you in a <span id="home"></span>.
+  </div>
+
+  <div class="bucket">
+  
+    <div class="choice-bucket">
+      <h4 class="highlight">Where you want to live?</h4>
+        <input name="location[]" type="text">
+        <input name="location[]" type="text">
+        <input name="location[]" type="text">
+        <input name="location[]" type="text">
+      </div>
+      
+      <div class="choice-bucket">
+        <h4 class="highlight">Who's your future spouse?</h4>
+          <input name="spouse[]" type="text">
+          <input name="spouse[]" type="text">
+          <input name="spouse[]" type="text">
+          <input name="spouse[]" type="text">
+      </div>
+      
+     <div class="choice-bucket">
+        <h4 class="highlight">What's your dream car?</h4>
+          <input name="car[]" type="text">
+          <input name="car[]" type="text">
+          <input name="car[]" type="text">
+          <input name="car[]" type="text">
+      </div>
+
+  </div>
+
+  <input type="submit" value="Grant my wish!">
+</form>
+<script src="script.js"></script>
+</body>
+</html>
